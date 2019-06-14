@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug - DirectX|Win32">
+      <Configuration>Debug - DirectX</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug - DirectX|x64">
+      <Configuration>Debug - DirectX</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug - OpenGL|Win32">
+      <Configuration>Debug - OpenGL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug - OpenGL|x64">
+      <Configuration>Debug - OpenGL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release - DirectX|Win32">
+      <Configuration>Release - DirectX</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release - DirectX|x64">
+      <Configuration>Release - DirectX</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release - OpenGL|Win32">
+      <Configuration>Release - OpenGL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release - OpenGL|x64">
+      <Configuration>Release - OpenGL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{C61EF04B-600E-424D-87CA-6966C4604ECF}</ProjectGuid>
+    <RootNamespace>CanvasEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug - OpenGL|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug - DirectX|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - OpenGL|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - DirectX|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug - OpenGL|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug - DirectX|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - OpenGL|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - DirectX|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug - OpenGL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug - DirectX|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release - OpenGL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release - DirectX|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug - OpenGL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug - DirectX|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release - OpenGL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release - DirectX|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Build/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug - OpenGL|Win32'">
+    <OutDir>Build/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug - DirectX|Win32'">
+    <OutDir>Build/</OutDir>
+    <LibraryPath>..\packages\directxtk_desktop_2015.2019.2.7.1\lib\Win32\Debug;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>Build/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug - OpenGL|x64'">
+    <OutDir>Build/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug - DirectX|x64'">
+    <OutDir>Build/</OutDir>
+    <LibraryPath>..\packages\directxtk_desktop_2015.2019.2.7.1\lib\x64\Debug;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Build/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - OpenGL|Win32'">
+    <OutDir>Build/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - DirectX|Win32'">
+    <OutDir>Build/</OutDir>
+    <LibraryPath>..\packages\directxtk_desktop_2015.2019.2.7.1\lib\Win32\Release;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>Build/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - OpenGL|x64'">
+    <OutDir>Build/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - DirectX|x64'">
+    <OutDir>Build/</OutDir>
+    <LibraryPath>..\packages\directxtk_desktop_2015.2019.2.7.1\lib\x64\Release;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>"Header Files";"Header Files\KodeBoldsMath";"Header Files\Systems";"Header Files\HelperClasses";"Header Files\Managers";"Header Files\Components";"Header Files\DataStructs";</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:twoPhase- </AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug - OpenGL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>"Header Files";"Header Files\KodeBoldsMath";"Header Files\Systems";"Header Files\HelperClasses";"Header Files\Managers";"Header Files\Components";"Header Files\DataStructs";</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:twoPhase- </AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;OPENGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug - DirectX|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>"Header Files";"Header Files\KodeBoldsMath";"Header Files\Systems";"Header Files\HelperClasses";"Header Files\Managers";"Header Files\Components";"Header Files\DataStructs";</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:twoPhase- </AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;DIRECTX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>"Header Files";"Header Files\KodeBoldsMath";"Header Files\Systems";"Header Files\HelperClasses";"Header Files\Managers";"Header Files\Components";"Header Files\DataStructs";</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:twoPhase- </AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug - OpenGL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>"Header Files";"Header Files\KodeBoldsMath";"Header Files\Systems";"Header Files\HelperClasses";"Header Files\Managers";"Header Files\Components";"Header Files\DataStructs";</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:twoPhase- </AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;OPENGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug - DirectX|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>"Header Files";"Header Files\KodeBoldsMath";"Header Files\Systems";"Header Files\HelperClasses";"Header Files\Managers";"Header Files\Components";"Header Files\DataStructs";</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:twoPhase- </AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;DIRECTX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>"Header Files";"Header Files\KodeBoldsMath";"Header Files\Systems";"Header Files\HelperClasses";"Header Files\Managers";"Header Files\Components";"Header Files\DataStructs";</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:twoPhase- </AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release - OpenGL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>"Header Files";"Header Files\KodeBoldsMath";"Header Files\Systems";"Header Files\HelperClasses";"Header Files\Managers";"Header Files\Components";"Header Files\DataStructs";</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:twoPhase- </AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;OPENGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release - DirectX|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>"Header Files";"Header Files\KodeBoldsMath";"Header Files\Systems";"Header Files\HelperClasses";"Header Files\Managers";"Header Files\Components";"Header Files\DataStructs";</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:twoPhase- </AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;DIRECTX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>"Header Files";"Header Files\KodeBoldsMath";"Header Files\Systems";"Header Files\HelperClasses";"Header Files\Managers";"Header Files\Components";"Header Files\DataStructs";</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:twoPhase- </AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release - OpenGL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>"Header Files";"Header Files\KodeBoldsMath";"Header Files\Systems";"Header Files\HelperClasses";"Header Files\Managers";"Header Files\Components";"Header Files\DataStructs";</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:twoPhase- </AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;OPENGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release - DirectX|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>"Header Files";"Header Files\KodeBoldsMath";"Header Files\Systems";"Header Files\HelperClasses";"Header Files\Managers";"Header Files\Components";"Header Files\DataStructs";</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:twoPhase- </AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;DIRECTX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source Files\HelperClasses\FrequencyValues.cpp" />
+    <ClCompile Include="Source Files\HelperClasses\IPAddress.cpp" />
+    <ClCompile Include="Source Files\HelperClasses\ObjLoader.cpp" />
+    <ClCompile Include="Source Files\HelperClasses\ShaderObject_DX.cpp" />
+    <ClCompile Include="Source Files\HelperClasses\Socket.cpp" />
+    <ClCompile Include="Source Files\HelperClasses\SocketListener.cpp" />
+    <ClCompile Include="Source Files\HelperClasses\SocketStreamer.cpp" />
+    <ClCompile Include="Source Files\HelperClasses\Task.cpp" />
+    <ClCompile Include="Source Files\HelperClasses\Thread.cpp" />
+    <ClCompile Include="Source Files\HelperClasses\TextureObject_DX.cpp" />
+    <ClCompile Include="Source Files\HelperClasses\VBO.cpp" />
+    <ClCompile Include="Source Files\HelperClasses\VBO_DX.cpp" />
+    <ClCompile Include="Source Files\KodeBoldsMath\Matrix4.cpp" />
+    <ClCompile Include="Source Files\KodeBoldsMath\Vector2.cpp" />
+    <ClCompile Include="Source Files\KodeBoldsMath\Vector3.cpp" />
+    <ClCompile Include="Source Files\KodeBoldsMath\Vector4.cpp" />
+    <ClCompile Include="Source Files\Managers\AntTweakManager.cpp" />
+    <ClCompile Include="Source Files\Managers\ECSManager.cpp" />
+    <ClCompile Include="Source Files\Managers\InputManager.cpp" />
+    <ClCompile Include="Source Files\Managers\InputManager_DX.cpp" />
+    <ClCompile Include="Source Files\Managers\NetworkManager.cpp" />
+    <ClCompile Include="Source Files\Managers\ResourceManager.cpp" />
+    <ClCompile Include="Source Files\Managers\SceneManager.cpp" />
+    <ClCompile Include="Source Files\Managers\ThreadMananger.cpp" />
+    <ClCompile Include="Source Files\Systems\MovementSystem.cpp" />
+    <ClCompile Include="Source Files\Systems\RenderSystem.cpp" />
+    <ClCompile Include="Source Files\Systems\RenderSystem_DX.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header Files\Components\AI.h" />
+    <ClInclude Include="Header Files\Components\Audio.h" />
+    <ClInclude Include="Header Files\Components\BoxCollider.h" />
+    <ClInclude Include="Header Files\Components\Camera.h" />
+    <ClInclude Include="Header Files\Components\Collision.h" />
+    <ClInclude Include="Header Files\Components\Colour.h" />
+    <ClInclude Include="Header Files\Components\Components.h" />
+    <ClInclude Include="Header Files\Components\ComponentType.h" />
+    <ClInclude Include="Header Files\Components\Geometry.h" />
+    <ClInclude Include="Header Files\Components\Gravity.h" />
+    <ClInclude Include="Header Files\Components\Instance.h" />
+    <ClInclude Include="Header Files\Components\Light.h" />
+    <ClInclude Include="Header Files\Components\RayCollider.h" />
+    <ClInclude Include="Header Files\Components\Shader.h" />
+    <ClInclude Include="Header Files\Components\SphereCollider.h" />
+    <ClInclude Include="Header Files\Components\Texture.h" />
+    <ClInclude Include="Header Files\Components\Transform.h" />
+    <ClInclude Include="Header Files\Components\Velocity.h" />
+    <ClInclude Include="Header Files\Components\Weight.h" />
+    <ClInclude Include="Header Files\DataStructs\BlendState.h" />
+    <ClInclude Include="Header Files\DataStructs\CullState.h" />
+    <ClInclude Include="Header Files\DataStructs\DepthState.h" />
+    <ClInclude Include="Header Files\DataStructs\Entity.h" />
+    <ClInclude Include="Header Files\DataStructs\Vertex.h" />
+    <ClInclude Include="Header Files\HelperClasses\FrequencyValues.h" />
+    <ClInclude Include="Header Files\HelperClasses\IPAddress.h" />
+    <ClInclude Include="Header Files\HelperClasses\ObjLoader.h" />
+    <ClInclude Include="Header Files\HelperClasses\Scene.h" />
+    <ClInclude Include="Header Files\HelperClasses\ShaderObject.h" />
+    <ClInclude Include="Header Files\HelperClasses\ShaderObject_DX.h" />
+    <ClInclude Include="Header Files\HelperClasses\ShaderObject_GL.h" />
+    <ClInclude Include="Header Files\HelperClasses\Socket.h" />
+    <ClInclude Include="Header Files\HelperClasses\SocketListener.h" />
+    <ClInclude Include="Header Files\HelperClasses\SocketStreamer.h" />
+    <ClInclude Include="Header Files\HelperClasses\Task.h" />
+    <ClInclude Include="Header Files\HelperClasses\Thread.h" />
+    <ClInclude Include="Header Files\HelperClasses\TextureObject.h" />
+    <ClInclude Include="Header Files\HelperClasses\TextureObject_DX.h" />
+    <ClInclude Include="Header Files\HelperClasses\TextureObject_GL.h" />
+    <ClInclude Include="Header Files\HelperClasses\VBO.h" />
+    <ClInclude Include="Header Files\HelperClasses\VBO_DX.h" />
+    <ClInclude Include="Header Files\HelperClasses\VBO_GL.h" />
+    <ClInclude Include="Header Files\KodeBoldsMath\KodeBoldsMath.h" />
+    <ClInclude Include="Header Files\KodeBoldsMath\Matrix4.h" />
+    <ClInclude Include="Header Files\KodeBoldsMath\Vector2.h" />
+    <ClInclude Include="Header Files\KodeBoldsMath\Vector3.h" />
+    <ClInclude Include="Header Files\KodeBoldsMath\Vector4.h" />
+    <ClInclude Include="Header Files\Managers\AntTweakManager.h" />
+    <ClInclude Include="Header Files\Managers\ECSManager.h" />
+    <ClInclude Include="Header Files\Managers\InputManager.h" />
+    <ClInclude Include="Header Files\Managers\InputManager_DX.h" />
+    <ClInclude Include="Header Files\Managers\InputManager_GL.h" />
+    <ClInclude Include="Header Files\Managers\Managers.h" />
+    <ClInclude Include="Header Files\Managers\NetworkManager.h" />
+    <ClInclude Include="Header Files\Managers\ResourceManager.h" />
+    <ClInclude Include="Header Files\Managers\SceneManager.h" />
+    <ClInclude Include="Header Files\Managers\ThreadManager.h" />
+    <ClInclude Include="Header Files\Systems\ISystem.h" />
+    <ClInclude Include="Header Files\Systems\MovementSystem.h" />
+    <ClInclude Include="Header Files\Systems\RenderSystem.h" />
+    <ClInclude Include="Header Files\Systems\RenderSystem_DX.h" />
+    <ClInclude Include="Header Files\Systems\RenderSystem_GL.h" />
+    <ClInclude Include="Header Files\Systems\Systems.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\directxtk_desktop_2015.2019.2.7.1\build\native\directxtk_desktop_2015.targets" Condition="Exists('..\packages\directxtk_desktop_2015.2019.2.7.1\build\native\directxtk_desktop_2015.targets')" />
+    <Import Project="..\packages\AntTweakBar.1.16.4\build\native\AntTweakBar.targets" Condition="Exists('..\packages\AntTweakBar.1.16.4\build\native\AntTweakBar.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\directxtk_desktop_2015.2019.2.7.1\build\native\directxtk_desktop_2015.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\directxtk_desktop_2015.2019.2.7.1\build\native\directxtk_desktop_2015.targets'))" />
+    <Error Condition="!Exists('..\packages\AntTweakBar.1.16.4\build\native\AntTweakBar.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AntTweakBar.1.16.4\build\native\AntTweakBar.targets'))" />
+  </Target>
+</Project>
